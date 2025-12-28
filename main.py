@@ -49,8 +49,6 @@ def resolve_setting(cli_value: Optional[str], config: dict, env_file: dict, key:
         return cli_value
     if key in config:
         return config[key]
-    if key in os.environ:
-        return os.environ.get(key)
     return env_file.get(key)
 
 

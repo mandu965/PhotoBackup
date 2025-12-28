@@ -55,7 +55,13 @@ def run_backup(options: BackupOptions, logger) -> BackupResult:
                 dest_name = src.with_suffix('.jpg').name
             dest = build_target_path(options.target_dir, capture_dt, dest_name)
 
-            if is_duplicate(src if not is_heic else src, dest, options.use_hash):
+            if is_heic and dest.exists():
+                # HEIC -> JPG yields different bytes, so skip if target JPG already exists.
+                result.skipped_duplicate += 1
+                logger.info("SKIP_DUPLICATE_HEIC %s -> %s", src, dest)
+                continue
+
+            if is_duplicate(src, dest, options.use_hash):
                 result.skipped_duplicate += 1
                 logger.info("SKIP_DUPLICATE %s -> %s", src, dest)
                 continue
