@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  photo-backup:
+    build: .
+    container_name: photo-backup
+    volumes:
+      - "D:/ai/photoBackup/test_orgin:/data/source:ro"
+      - "D:/ai/photoBackup/test_copy:/data/target"
+      - "./logs:/app/logs"
+    environment:
+      - SOURCE_DIR=/data/source
+      - TARGET_DIR=/data/target
+    command: ["python", "main.py"]

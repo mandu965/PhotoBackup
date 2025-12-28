@@ -1,0 +1,28 @@
+2025-12-28 14:06:33,826 INFO Starting backup
+2025-12-28 14:06:33,827 INFO Source: /data/source
+2025-12-28 14:06:33,827 INFO Target: /data/target
+2025-12-28 14:06:33,828 INFO Extensions: .jpg, .jpeg, .png, .heic, .mp4, .mov
+2025-12-28 14:06:33,829 INFO Dry run: False
+2025-12-28 14:06:33,831 INFO Hash dedup: False
+2025-12-28 14:06:33,832 INFO Copy HEIC on fail: False
+2025-12-28 14:06:33,937 INFO COPIED /data/source/14.jpg -> /data/target/2025/12/14.jpg
+2025-12-28 14:06:33,997 INFO COPIED /data/source/점심 도시락배달 영수증_20251216.jpg -> /data/target/2025/12/점심 도시락배달 영수증_20251216.jpg
+2025-12-28 14:06:34,001 INFO Summary: scanned=2, backed_up=2, converted=0, skipped_duplicate=0, failed=0
+2025-12-28 14:10:17,687 INFO Starting backup
+2025-12-28 14:10:17,688 INFO Source: /data/source
+2025-12-28 14:10:17,704 INFO Target: /data/target
+2025-12-28 14:10:17,710 INFO Extensions: .jpg, .jpeg, .png, .heic, .mp4, .mov
+2025-12-28 14:10:17,715 INFO Dry run: False
+2025-12-28 14:10:17,718 INFO Hash dedup: False
+2025-12-28 14:10:17,719 INFO Copy HEIC on fail: False
+2025-12-28 14:10:17,886 INFO COPIED /data/source/14.jpg -> /data/target/2025/12/14.jpg
+2025-12-28 14:10:17,941 INFO COPIED /data/source/점심 도시락배달 영수증_20251216.jpg -> /data/target/2025/12/점심 도시락배달 영수증_20251216.jpg
+2025-12-28 14:10:17,944 INFO Summary: scanned=2, backed_up=2, converted=0, skipped_duplicate=0, failed=0
+2025-12-28 14:20:24,389 INFO Starting backup
+2025-12-28 14:20:24,390 INFO Source: /data/source
+2025-12-28 14:20:24,391 INFO Target: /data/target
+2025-12-28 14:20:24,392 INFO Extensions: .jpg, .jpeg, .png, .heic, .mp4, .mov
+2025-12-28 14:20:24,393 INFO Dry run: False
+2025-12-28 14:20:24,393 INFO Hash dedup: False
+2025-12-28 14:20:24,394 INFO Copy HEIC on fail: False
+2025-12-28 14:20:24,403 INFO Summary: scanned=0, backed_up=0, converted=0, skipped_duplicate=0, failed=0
